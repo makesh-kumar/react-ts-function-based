@@ -1,6 +1,8 @@
 import React, { Component, useEffect, useState } from 'react';
 import { render } from 'react-dom';
 import Child from './Child';
+import Test from './Test';
+
 import './style.css';
 
 const App = (props) => {
@@ -19,8 +21,11 @@ const App = (props) => {
       <br />
       Email :- {email}
       <hr />
-      <p>Child Componnet</p>
+      <p>Child Component</p>
       <Child name={name} onFormSubmit={onFormSubmit} />
+      <hr />
+      <p>TEST Component</p>
+      <Test name={name} onFormSubmit={onFormSubmit} />
     </div>
   );
 };
